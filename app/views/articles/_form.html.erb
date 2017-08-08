@@ -1,0 +1,9 @@
+<%= form_for article, class: "form-group" do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title, class: "form-control" %>
+  <%= t.label :context %>
+  <%= t.text_field :context, class: "form-control" %>
+  <div class="text-center btn-margin">
+    <%= t.submit 'create', class: "btn btn-primary btn-large btn-block" %>
+  </div>
+<% end %>
